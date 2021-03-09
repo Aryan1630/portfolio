@@ -166,6 +166,7 @@ nav ul li a{
 }
 
 .abt-img{
+    align-self: center;
     width:70%;
     height: 85%;
 }
@@ -182,4 +183,31 @@ nav ul li a{
     font-size: 4em;
     color: white;
     line-height:50px;
+}
+@media only screen and (max-width: 600px){
+    .about-desc{
+        font-size: 3em !important;
+    }
+    .abt-img{
+        margin-left: 50px;
+    }
+    nav ul{
+        clip-path:circle(10% at 5% 5%);
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    .about-desc{
+        font-size: 2em !important;
+    }
+    .branding-text{
+        font-family: 'Teko', sans-serif;
+        font-size: 30px !important;
+        margin-top: -10px;
+    }
+    .name{
+        font-size: 4em;
+        font-family: 'Teko', sans-serif;   
+    }
 }
