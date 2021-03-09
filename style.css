@@ -156,7 +156,6 @@ nav ul li a{
 
 .about{
     width: 100vw;
-    height: 110vh; 
     background: black;
 }
 .section-header{
@@ -172,6 +171,7 @@ nav ul li a{
 }
 .row{
     margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
 
 .about-desc{
