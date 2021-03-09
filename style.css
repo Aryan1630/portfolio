@@ -1,0 +1,137 @@
+*{
+    transition: all 0.4s ease-in-out;
+}
+body{
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow-x: hidden;
+}
+
+.one{
+    width:100vw;
+    height: 100vh;
+    background: url(background1.jpg)no-repeat center center fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.branding-text{
+    font-family: 'Teko', sans-serif;
+    font-size: 3em;
+}
+nav{
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+nav ul{
+    list-style: none;
+    width: 420px;
+    background: black;
+    padding: 24px 0px;
+    height:100vh;
+    clip-path:circle(10% at 10% 5%);
+}
+
+nav ul.active{
+    clip-path: circle(100% at -45% 10%);
+}
+
+nav ul .menu{
+    width:48px;
+    height:40px;
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+nav ul .menu span{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    padding:2px;
+    width:48px;
+    border-radius: 4px;
+}
+
+nav .menu span:nth-child(1){
+    top: 0px;
+}
+
+nav .menu span:nth-child(2){
+    top: 18px;
+    width: 28px;
+}
+nav .menu span:nth-child(3){
+    bottom: 0px;
+    width: 40px;
+}
+
+nav ul.active .menu span:nth-child(1){
+    top: 0px;
+    left: 23px;
+    width: 4px;
+    height: 40px;
+}
+
+nav ul.active .menu span:nth-child(2){
+    width: 40px;
+    left: 5px;
+}
+
+nav ul.active .menu span:nth-child(3){
+    padding:0px;
+    width: 0px;
+}
+
+nav ul.active .menu{
+    transform: rotateZ(45deg);
+}
+
+nav ul li{
+    font-size: 2em;
+    padding: 24px 48px; 
+    color: white;
+    text-transform:uppercase;
+}
+
+nav ul li:hover{
+    background-color: lightgray;
+    padding-left: 56px;
+}
+
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name{
+    font-size: 6em;
+    font-family: 'Teko', sans-serif;   
+}
+
+.branding-text{
+    font-size: 2em;
+    margin-top: -30px;
+    color: #6F6F6F;
+}
+
+/* .cursor{
+    position:fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition:0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.name:hover ~ .cursor{
+    transform: scale(6)
+} */
