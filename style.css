@@ -2,15 +2,17 @@
     transition: all 0.4s ease-in-out;
 }
 body{
+    font-family: 'Teko', sans-serif; 
     padding: 0px !important;
     margin: 0px !important;
     overflow-x: hidden;
+    
 }
 
 .one{
     width:100vw;
     height: 100vh;
-    background: url(background1.jpg)no-repeat center center fixed;
+    background: url(background1.jpg)no-repeat center center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +31,7 @@ nav{
 nav ul{
     list-style: none;
     width: 420px;
-    background: black;
+    background: #181818;
     padding: 24px 0px;
     height:100vh;
     clip-path:circle(10% at 10% 5%);
@@ -103,6 +105,19 @@ nav ul li:hover{
     padding-left: 56px;
 }
 
+nav ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color: #fff;
+}
+#highlight{
+    color: red;
+}
+
 .main-container{
     position: absolute;
     top: 50%;
@@ -137,8 +152,34 @@ nav ul li:hover{
     transform: scale(6)
 } */
 
+  
+
 .about{
     width: 100vw;
-    height: 100vh; 
-    background: lightgray;
+    height: 110vh; 
+    background: black;
+}
+.section-header{
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 4em;
+}
+
+.abt-img{
+    width:70%;
+    height: 85%;
+}
+.row{
+    margin-top: 50px !important;
+}
+
+.about-desc{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    line-height:50px;
 }
