@@ -136,3 +136,9 @@ nav ul li:hover{
 .name:hover ~ .cursor{
     transform: scale(6)
 } */
+
+.about{
+    width: 100vw;
+    height: 100vh; 
+    background: lightgray;
+}
